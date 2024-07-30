@@ -9,7 +9,10 @@ const check = ()=>{
  check()
 
   return (
+    <>
     <div>Home</div>
+    <h1>hello world</h1>
+    </>
   )
 }
 
