@@ -1,7 +1,10 @@
 import { Button } from "@mui/material";
+import Login from "./components/screens/auth/Login";
+import Routes from "./routes/Routes";
+
 
 function App() {
-  return <Button variant="contained">Click</Button>;
+  return <Routes/>;
 }
 
 export default App;
