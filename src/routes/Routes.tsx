@@ -1,10 +1,13 @@
-import React, { Suspense } from "react"
-import PublicRoutes from "./PublicRoutes"
-import PrivateRoutes from "./PrivateRoutes"
-import { ToastContainer } from "react-toastify"
-import "react-toastify/dist/ReactToastify.css"
+import { Suspense } from "react";
+
+import PublicRoutes from "./PublicRoutes";
+import PrivateRoutes from "./PrivateRoutes";
+
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 const Routes = () => {
-  const user = {}
+  const user = {};
 
   return (
     <Suspense fallback={<div>Loading.....</div>}>
@@ -17,7 +20,7 @@ const Routes = () => {
 
       {user ? <PrivateRoutes /> : <PublicRoutes />}
     </Suspense>
-  )
-}
+  );
+};
 
-export default Routes
+export default Routes;

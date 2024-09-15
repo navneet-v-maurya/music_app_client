@@ -9,7 +9,7 @@ const generic_error: GenericError = {
 };
 
 type ErrorResponse = {
-  response?: any; // You can specify a more detailed type if you know the structure of the response
+  response?: any;
 };
 
 const default_catch = (error: ErrorResponse, resolve: (value: any) => void): void => {
